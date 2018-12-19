@@ -28,7 +28,7 @@ body {
     position: absolute;
     width: 80%;
     transform: rotate(-20deg);
-    top: 70px;
+    top: 36px;
 }
 
 #cover{
@@ -66,7 +66,7 @@ button {
     cursor: pointer;
     position: absolute;
     background-color: #D8574D;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     text-transform: uppercase;
     margin: 0 auto;
@@ -74,26 +74,25 @@ button {
     box-shadow: 0 6px #c60f02;
     left: 30px;
     bottom: 170px;
-    width: 130px;
-    height: 60px;
+    width: 117px;
+    height: 50px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: .7px;
 }
 
 @media only screen and (orientation: landscape) {
     #tree {
-        width: 250px;
+        width: 150px;
     }
 
     #xmas {
-        width: 45%;
-        left: 30px;
+        width: 150px;
         top: 30px;
-        transform: none;
+        left: 0px;
     }
 
     button {
-        bottom: 30px;
+        display: none;
     }
 
     #cover {
@@ -101,10 +100,7 @@ button {
     }
 
     #text {
-        transform: none;
         padding: 0;
         width: auto;
-        top: 173px;
-        left: 133px;
-    }
+        font-size: 20px;
 }
