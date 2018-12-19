@@ -7,28 +7,46 @@
 html {
     background-color: #fbf0e3;
     height: 100%;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #tree {
     width: 80%;
     position: absolute;
-    bottom: -30px;
-    right: -20px;
+    bottom: 0px;
+    right: 0px;
 }
 
 #xmas {
     position: absolute;
     width: 80%;
     transform: rotate(-20deg);
-    top: 50px;
+    top: 70px;
+}
+
+#cover{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #fbf0e3;
+    left: 0;
+    bottom: 0;
 }
 
 #text {
-    padding: 30px 15px 0px 15px;
+    padding: 0px 15px 0px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     width: 100%;
     position: absolute;
+    padding-bottom: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -55,9 +73,38 @@ button {
     border-radius: 20px;
     box-shadow: 0 6px #c60f02;
     left: 30px;
-    bottom: 120px;
+    bottom: 170px;
     width: 130px;
     height: 60px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: .7px;
+}
+
+@media only screen and (orientation: landscape) {
+    #tree {
+        width: 250px;
+    }
+
+    #xmas {
+        width: 45%;
+        left: 30px;
+        top: 30px;
+        transform: none;
+    }
+
+    button {
+        bottom: 30px;
+    }
+
+    #cover {
+        display: none;
+    }
+
+    #text {
+        transform: none;
+        padding: 0;
+        width: auto;
+        top: 173px;
+        left: 133px;
+    }
 }
