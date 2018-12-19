@@ -26,7 +26,7 @@ body {
 
 #xmas {
     position: absolute;
-    width: 80%;
+    width: 70%;
     transform: rotate(-20deg);
     top: 36px;
 }
@@ -46,7 +46,7 @@ body {
     font-size: 24px;
     width: 100%;
     position: absolute;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
